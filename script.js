@@ -12,18 +12,54 @@ function opentab(event, tabname) {
   document.getElementById(tabname).classList.add('active-tab');
 }
 
-//text type
-/*
-const type = document.getElementById('header-text');
+// title text typing effect
+const aText = new Array('WELCOME TO MY PORTFOLIO WEBSITE!');
+const iSpeed = 100; // time delay of print out
+let iIndex = 0; // start printing array at this position
+let iArrLength = aText[0].length; // the length of the text array
+const iScrollAt = 20; // start scrolling up at this many lines
 
-const typeWriter = new typeWriter(title, {
-  loop: true,
-  delay: 75,
-});
+let iTextPos = 0; // initialise text position
+let sContents = ''; // initialise contents variable
+let iRow; // initialise current row
 
-typeWriter
-  .pauseFor(2000)
-  .typeString('WELCOME TO MY PORTFOLIO WEBSITE')
-  .pauseFor(1000)
-  .start();
-*/
+let cursorVisible = false; // Initialize cursor visibility
+
+function toggleCursor() {
+  const cursor = document.getElementById('cursor');
+  cursor.style.visibility = cursorVisible ? 'hidden' : 'visible';
+  cursorVisible = !cursorVisible;
+}
+
+function typewriter() {
+  sContents = '';
+  iRow = Math.max(0, iIndex - iScrollAt);
+  const destination = document.getElementById('typedtext');
+  const cursor = '<span id="cursor">|</span>'; // Cursor element
+
+  while (iRow < iIndex) {
+    sContents += aText[iRow++] + '<br />';
+  }
+
+  // Set the content with the cursor
+  destination.innerHTML =
+    sContents + aText[iIndex].substring(0, iTextPos) + cursor;
+
+  // Toggle cursor visibility after typing animation is complete
+  if (iTextPos === iArrLength) {
+    toggleCursor();
+  }
+
+  if (iTextPos++ == iArrLength) {
+    iTextPos = 0;
+    iIndex++;
+    if (iIndex != aText.length) {
+      iArrLength = aText[iIndex].length;
+      setTimeout(typewriter, 500);
+    }
+  } else {
+    setTimeout(typewriter, iSpeed);
+  }
+}
+
+typewriter();
