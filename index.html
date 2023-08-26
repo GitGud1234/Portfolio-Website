@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1 class="title">WELCOME TO MY PORTFOLIO WEBSITE!</h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------About--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/selfie-phone.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Lorem isp</p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event,'skills')"
+              >
+                Skills & Experience
+              </p>
+              <p class="tab-links" onclick="opentab(event,'education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+                <li>
+                  <span>WordPress</span><br />Designing eCommerce Websites
+                </li>
+                <li>
+                  <span>HTML / CSS / JavaScript</span><br />Web app Development
+                </li>
+                <li>
+                  <span>Unity C#</span><br />
+                  Game Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>University</span><br />Computer Science Degree with
+                  Games Programming BSc (Hons) 2020 at Goldsmiths University of
+                  London
+                </li>
+                <li><span>Online Courses</span><br />Udemy courses</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------Portfolio--------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list"></div>
+        <div class="work">
+          <img src="images/projects/work-1.png" />
+          <div class="layer">
+            <h3>Project Title</h3>
+            <p>Description</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/projects/work-2.png" />
+          <div class="layer">
+            <h3>Project Title</h3>
+            <p>Description</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/projects/work-3.png" />
+          <div class="layer">
+            <h3>Project Title</h3>
+            <p>Description</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <script>
+      const sideMenu = document.getElementById('sidemenu');
+
+      function openmenu() {
+        sideMenu.style.right = '0';
+      }
+      function closemenu() {
+        sideMenu.style.right = '-200px';
+      }
+    </script>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
