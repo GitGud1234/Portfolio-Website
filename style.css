@@ -56,8 +56,8 @@ body {
 }
 
 .container {
-  padding: 10px 10%;
-  border: 1px solid blue;
+  padding: 40px 10%;
+  /*border: 1px solid blue;*/
   background-color: var(--primary-black);
 }
 
@@ -101,14 +101,15 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin-top: 200px;
   font-size: 30px;
 }
 
 /*--------About--------*/
 #about {
-  padding: 80px 0;
+  padding: 10px 0;
+  /* border: 1px solid red;*/
   color: var(--grey);
 }
 .row {
@@ -131,7 +132,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--white);
 }
@@ -189,10 +190,11 @@ nav ul li a:hover::after {
 
 /*--------Portfolio--------*/
 #portfolio {
-  padding: 50px 0;
+  /* border: 1px solid red; */
+  padding: 10px 0;
 }
 .work-list {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -201,7 +203,7 @@ nav ul li a:hover::after {
 }
 
 .work {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -250,7 +252,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: #fff;
+  background: var(--white);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -265,6 +267,7 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
+/*
 .btn {
   display: block;
   margin: 50px auto;
@@ -281,6 +284,7 @@ nav ul li a:hover::after {
   background: var(--secondary-brightred);
   transition: 0.3s;
 }
+*/
 
 nav .fas {
   display: none;
@@ -332,7 +336,7 @@ nav .fas {
 
   .about-col-1 {
     margin-bottom: 30px;
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
   }
   .about-col-1 img {
     display: block;
@@ -343,8 +347,8 @@ nav .fas {
 
   .about-col-2 {
     font-size: 14px;
-    border: 1px solid blueviolet;
-    padding: 10px 20%;
+    /* border: 1px solid blueviolet;*/
+    padding: 10px 0;
   }
   .tab-links {
     font-size: 16px;
