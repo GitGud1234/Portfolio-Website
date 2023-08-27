@@ -1,3 +1,14 @@
+//open side menu on smaller screens
+const sideMenu = document.getElementById('sidemenu');
+
+function openmenu() {
+  sideMenu.style.right = '0';
+}
+function closemenu() {
+  sideMenu.style.right = '-200px';
+}
+
+// about me tabs
 const tablinks = document.getElementsByClassName('tab-links');
 const tabcontents = document.getElementsByClassName('tab-contents');
 

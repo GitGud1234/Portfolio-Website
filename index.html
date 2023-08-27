@@ -36,12 +36,12 @@
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
+            <div class="about-col-1">
             <img src="images/selfie-phone.png" />
-          </div>
+            </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>Lorem isp</p>
+            <p>A self taught programmer, always striving for more knowledge and experience in the field of tech. A goal oriented mindset of personal growth has helped me overcome many obstacles. Coding is one of my passions in life that I’m seeking mastery in through building projects and learning as I go along.</p>
             <div class="tab-titles">
               <p
                 class="tab-links active-link"
@@ -53,33 +53,60 @@
                 Education
               </p>
             </div>
+
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br />Web app Development</li>
-                <li>
-                  <span>App Development</span><br />Building Android/iOS apps
+                <li class="list"><span>Web Development</span><br /> 
+                  <ul>
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>WordPress - building eCommerce Websites</li>
+                    <li>Front-end frameworks and libraries</li>
+                    <li>Back-end server side development</li>
+                    <li>UI / UX and web app interfaces</li>
+                  </ul>
                 </li>
-                <li>
-                  <span>WordPress</span><br />Designing eCommerce Websites
+              </ul>
+
+              <ul>
+                <li class="list"><span>Game Development</span><br />
+                  <ul>
+                    <li>Unity / C#</li>
+                  </ul>
                 </li>
-                <li>
-                  <span>HTML / CSS / JavaScript</span><br />Web app Development
-                </li>
-                <li>
-                  <span>Unity C#</span><br />
-                  Game Development
+              </ul>
+
+              <ul>
+                <li class="list"><span>App Development</span><br />
+                  <ul>
+                    <li>Building Android / iOS apps</li>
+                  </ul>
                 </li>
               </ul>
             </div>
+
             <div class="tab-contents" id="education">
               <ul>
-                <li>
-                  <span>University</span><br />Computer Science Degree with
+                <li class="list"><span>University</span><br />
+                  <ul>
+                    <li>Computer Science Degree with
                   Games Programming BSc (Hons) 2020 at Goldsmiths University of
-                  London
+                  London</li>
+                  </ul>
                 </li>
-                <li><span>Online Courses</span><br />Udemy courses</li>
+
+                <li class="list"><span>Udemy Online Courses</span><br />
+                  <ul>
+                    <li>The Complete JavaScript Course 2023: From Zero to Hero</li>
+                    <li>100 Days of JavaScript</li>
+                    <li>The Complete 2023 Web Development Bootcamp </li>
+                    <li>Master the Coding interview: Data Structures + Algorithms</li>
+                    <li>The Complete SQL Bootcamp: Go from Zero to Hero</li>
+                    <li>Node.js - The Complete RESTful API Masterclass (2023)</li>
+                    <li>Ultimate AWS Certified Cloud Practitioner - 2023</li>
+                    <li>Clean Code</li>
+                    <li>100 Days of Code: The Complete Python Pro Bootcamp for 2023</li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -92,36 +119,37 @@
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">Portfolio</h1>
+        <p class="description">A collection of projects showcasing my versatility as a developer in working with various languages and frameworks</p>
         <div class="work-list">
           <div class="work">
-            <img src="images/projects/work-1.png" />
+            <img src="images/projects/frontend.png" />
               <div class="layer">
-                <h3>Project Title</h3>
-                <p>Description</p>
+                <h3>Front-End Development</h3>
+                <p> UI / UX, Designing and developing projects using different languages and frameworks</p>
                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
               </div>
           </div>
           <div class="work">
-            <img src="images/projects/work-2.png" />
+            <img src="images/projects/backend.png" />
               <div class="layer">
-                <h3>Project Title</h3>
-                <p>Description</p>
+                <h3>Back-End Development</h3>
+                <p>Using libraries and frameworks for server side projects</p>
                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
               </div>
           </div>
           <div class="work">
-            <img src="images/projects/work-3.png" />
+            <img src="images/projects/unity.jpg" />
               <div class="layer">
-                <h3>Project Title</h3>
-                <p>Description</p>
+                <h3>Unity Game Development</h3>
+                <p>Projects created using the Unity game engine and C#</p>
                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
               </div>
           </div>
           <div class="work">
-            <img src="images/projects/work-3.png" />
+            <img src="images/projects/blog.jpg" />
               <div class="layer">
-                <h3>Project Title</h3>
-                <p>Description</p>
+                <h3>Blogs & Extras</h3>
+                <p>My written work about my personal interests and hobbies</p>
                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
               </div>
           </div>
@@ -129,19 +157,6 @@
           <a href="#" class="btn">See More</a>
       </div>
     </div>
-
-    <script>
-      //open side menu on smaller screens
-      const sideMenu = document.getElementById('sidemenu');
-
-      function openmenu() {
-        sideMenu.style.right = '0';
-      }
-      function closemenu() {
-        sideMenu.style.right = '-200px';
-      }
-    </script>
-    <script></script>
     <script src="script.js"></script>
     <main></main>
     <footer></footer>
