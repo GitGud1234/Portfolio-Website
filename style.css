@@ -18,6 +18,7 @@
 body {
   background: var(--primary-black);
   color: var(--white);
+  margin-bottom: 100px;
 }
 
 #header {
@@ -102,7 +103,7 @@ nav ul li a:hover::after {
 
 .header-text {
   /*border: 1px solid red;*/
-  margin-top: 200px;
+  margin-top: 100px;
   font-size: 30px;
 }
 
@@ -290,8 +291,8 @@ nav .fas {
   display: none;
 }
 /*--------Small Screen Responsiveness--------*/
-/* @media only screen and (max-device-width: 990px) { */
-@media only screen and (max-width: 990px) {
+@media only screen and (max-device-width: 990px) {
+  /* @media only screen and (max-width: 990px) {*/
   .logo {
     width: 70%;
   }
@@ -299,6 +300,12 @@ nav .fas {
     display: inline-block;
     font-size: 45px;
   }
+
+  #header {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
   nav .fas {
     display: block;
     font-size: 25px;
