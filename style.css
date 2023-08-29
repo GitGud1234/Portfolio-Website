@@ -208,8 +208,10 @@ nav ul li a:hover::after {
 }
 
 /*--------Portfolio--------*/
+
 #portfolio {
-  /* border: 1px solid red; */
+  padding-bottom: 100px; /*footer WIP*/
+  background: var(--primary-black);
   /*padding: 10px 0; */
 }
 .work-list {
@@ -313,7 +315,7 @@ nav .fas {
   /* @media only screen and (max-width: 990px) {*/
   .logo {
     width: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   #typedtext {
     display: inline-block;
