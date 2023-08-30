@@ -20,20 +20,9 @@ body {
   color: var(--white);
 }
 
-/*
 #header {
   width: 100%;
-  height: 100vh;
-  background-image: url(images/web-developer.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
-}
-*/
-#header {
-  width: 100%;
-  height: 100vh;
+  height: 100svh;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
   /*border: 1px solid red; */
 }
@@ -68,7 +57,7 @@ body {
 }
 
 .container-header {
-  padding: 20px 10%;
+  padding: 0px 10%;
   background-color: var(--primary-black-transparent);
   /* border: 1px solid blue; */
 }
@@ -313,11 +302,12 @@ nav .fas {
   /* @media only screen and (max-width: 990px) {*/
   .logo {
     width: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   #typedtext {
-    display: inline-block;
     font-size: 45px;
+    /* font-size: clamp(2rem, 1rem + 10vw, 5rem); */
+    /* border: 1px solid red; */
   }
 
   nav .fas {
@@ -383,10 +373,9 @@ nav .fas {
 @media only screen and (max-device-width: 990px) and (orientation: landscape) {
   .header-text {
     margin-top: 30px;
-    /*border: 1px solid green; */
+    /* border: 1px solid green; */
   }
-  .container-header {
-    padding: 0px 10%;
-    /*border: 1px solid blue;*/
-  }
+  /* .container-header {
+    border: 1px solid blue;
+  } */
 }
