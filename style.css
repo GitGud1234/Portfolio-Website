@@ -1,6 +1,7 @@
 :root {
   --primary-black: #080808;
-  --primary-black-transparent: #080808a4;
+  /* --primary-black-transparent: #080808a4; */
+  --primary-black-transparent: #080808ed;
   --secondary-brightred: #ff0000;
   --secondary-darkred: #920000;
   --white: #fff;
@@ -20,19 +21,19 @@ body {
   color: var(--white);
 }
 
-#header {
+#background {
   width: 100%;
-  height: 100svh;
+  height: 90svh;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
-  /*border: 1px solid red; */
 }
 
-.background {
+.background-img {
   position: fixed;
   z-index: -1;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  top: 0;
 }
 
 #typedtext {
@@ -56,15 +57,28 @@ body {
   animation: blink 1s steps(1) infinite;
 }
 
+/* #header {
+  border: 1px solid red;
+} */
+
 .container-header {
   padding: 0px 10%;
   background-color: var(--primary-black-transparent);
   /* border: 1px solid blue; */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.container-header.sticking {
+  background-color: #0d0d0d;
+  transition: background-color 500ms;
 }
 
 .container {
   padding: 20px 10%;
   padding-bottom: 100px;
+  padding-top: 190px;
   /* border: 1px solid blue; */
   background-color: var(--primary-black);
 }
@@ -110,7 +124,7 @@ nav ul li a:hover::after {
 
 .header-text {
   /*border: 1px solid red;*/
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 /*--------About--------*/
@@ -197,7 +211,7 @@ nav ul li a:hover::after {
 /*--------Portfolio--------*/
 
 #portfolio {
-  padding-bottom: 100px; /*footer WIP*/
+  padding-bottom: 500px; /*footer WIP*/
   background: var(--primary-black);
   /*padding: 10px 0; */
 }
@@ -298,8 +312,8 @@ nav .fas {
   display: none;
 }
 /*--------Small Screen Responsiveness--------*/
-@media only screen and (max-device-width: 990px) {
-  /* @media only screen and (max-width: 990px) {*/
+/* @media only screen and (max-device-width: 990px) { */
+@media only screen and (max-width: 990px) {
   .logo {
     width: 70%;
     /* border: 1px solid red; */
@@ -308,6 +322,14 @@ nav .fas {
     font-size: 45px;
     /* font-size: clamp(2rem, 1rem + 10vw, 5rem); */
     /* border: 1px solid red; */
+  }
+  .container {
+    padding-top: 130px;
+  }
+  #portfolio {
+    padding-bottom: 100px; /*footer WIP*/
+    background: var(--primary-black);
+    /*padding: 10px 0; */
   }
 
   nav .fas {
@@ -372,7 +394,7 @@ nav .fas {
 
 @media only screen and (max-device-width: 990px) and (orientation: landscape) {
   .header-text {
-    margin-top: 30px;
+    padding-top: 30px;
     /* border: 1px solid green; */
   }
   /* .container-header {

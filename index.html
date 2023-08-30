@@ -15,14 +15,35 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
+
+     <!--nav bar-->
+      <header class="container-header">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+           <ul id="sidemenu">
+             <li><a href="#about">About</a></li>
+             <li><a href="#portfolio">Portfolio</a></li>
+             <li><a href="GelmisResume.pdf">CV</a></li>
+             <i class="fas fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fas fa-bars" onclick="openmenu()"></i>
+         </nav>
+      </header>
+
+      <div id="background"> 
+        <img src="images/web-developer.jpg" class="background-img" />
+        <div class="header-text">
+          <div id="typedtext"></div>
+      </div>
+    </div>
+
+  <!--
     <div id="header">
       <img src="images/web-developer.jpg" class="background" />
       <div class="container-header">
         <nav>
          <img src="images/logo.png" class="logo" />
-          
           <ul id="sidemenu">
-            <!--<li><a href="#header">Home</a></li>-->
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="GelmisResume.pdf">CV</a></li>
@@ -30,12 +51,12 @@
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        
         </div>
         <div class="header-text">
           <div id="typedtext"></div>
       </div>
-    </div>
+    </div>-->
+  
 
     <!---------About--------->
     <div id="about">

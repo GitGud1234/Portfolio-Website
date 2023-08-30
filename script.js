@@ -74,3 +74,16 @@ function typewriter() {
 }
 
 typewriter();
+
+// nav menu
+const containerHeader = document.querySelector('.container-header');
+const scrollWatcher = document.createElement('div');
+
+scrollWatcher.setAttribute('data-scroll-watcher', '');
+containerHeader.before(scrollWatcher);
+
+const navObserver = new IntersectionObserver(entries => {
+  containerHeader.classList.toggle('sticking', !entries[0].isIntersecting);
+});
+
+navObserver.observe(scrollWatcher);
