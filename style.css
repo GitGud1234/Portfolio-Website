@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -110,6 +111,7 @@ nav ul li a {
   color: var(--white);
   text-decoration: none;
   font-size: 1.8rem;
+  /* font-size: 18px; */
   position: relative;
 }
 
@@ -279,10 +281,10 @@ nav ul li a:hover::after {
   color: var(--secondary-brightred);
   text-decoration: none;
   /* font-size: 1.8rem; */
-  line-height: 4.5rem;
+  line-height: 45px;
   background: var(--white);
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
 }
@@ -340,7 +342,7 @@ nav .fas {
 
   nav .fas {
     display: block;
-    font-size: 2.5rem;
+    font-size: 25px;
   }
   nav ul {
     background: var(--primary-black);
