@@ -2,21 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0," />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" />
     <meta http-equiv="X-UA-Compatible” content=“ie=edge">
     <title>My Portfolio</title>
     
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville&display=swap" rel="stylesheet">-->
-
-    <script
-      src="https://kit.fontawesome.com/c4254e24a8.js"
-      crossorigin="anonymous"
-    ></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/16267575b5.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
@@ -24,51 +19,30 @@
      <!--nav bar-->
       <header class="container-header">
         <nav>
-          <img src="images/logo.png" class="logo" />
+          <img src="images/logo.png" class="logo" alt="web developer logo" />
            <ul id="sidemenu">
              <li><a href="#about">About</a></li>
              <li><a href="#portfolio">Portfolio</a></li>
              
-             <i class="fas fa-times" onclick="closemenu()"></i>
+             <i class="fa-solid fa-times" onclick="closemenu()"></i>
            </ul>
-           <i class="fas fa-bars" onclick="openmenu()"></i>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
          </nav>
       </header>
 
       <div id="background"> 
-        <img src="images/web-developer.jpg" class="background-img" />
+        <img src="images/web-developer.jpg" class="background-img" alt="web developer"/>
         <div class="header-text">
           <div id="typedtext"></div>
       </div>
     </div>
-
-  <!--
-    <div id="header">
-      <img src="images/web-developer.jpg" class="background" />
-      <div class="container-header">
-        <nav>
-         <img src="images/logo.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="GelmisResume.pdf">CV</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        </div>
-        <div class="header-text">
-          <div id="typedtext"></div>
-      </div>
-    </div>-->
-  
 
     <!---------About--------->
     <div id="about">
       <div class="container">
         <div class="row">
             <div class="about-col-1">
-            <img src="images/selfie-phone.png" />
+            <img src="images/selfie-phone.png" alt="selfie"/>
             </div>
           <div class="about-col-2">
             <h1 class="sub-title">ABOUT ME</h1>
@@ -162,7 +136,7 @@
         <p class="description">A collection of projects showcasing my versatility as a developer in working with various languages and frameworks</p>
         <div class="work-list">
           <div class="work">
-            <img src="images/projects/frontend.png" />
+            <img src="images/projects/frontend.png" alt="frontend" />
               <div class="layer">
                 <h3>Front-End Development</h3>
                 <p> UI / UX, Designing and developing projects using different languages and frameworks</p>
@@ -170,7 +144,7 @@
               </div>
           </div>
           <div class="work">
-            <img src="images/projects/backend.png" />
+            <img src="images/projects/backend.png" alt="backend" />
               <div class="layer">
                 <h3>Back-End Development</h3>
                 <p>Using libraries and frameworks for server side projects</p>
@@ -178,7 +152,7 @@
               </div>
           </div>
           <div class="work">
-            <img src="images/projects/unity.jpg" />
+            <img src="images/projects/unity.jpg" alt="unity"/>
               <div class="layer">
                 <h3>Unity Game Development</h3>
                 <p>Projects created using the Unity game engine and C#</p>
@@ -186,7 +160,7 @@
               </div>
           </div>
           <div class="work">
-            <img src="images/projects/blog.jpg" />
+            <img src="images/projects/blog.jpg" alt="blog" />
               <div class="layer">
                 <h3>Blogs & Extras</h3>
                 <p>My written work about my personal interests and hobbies</p>

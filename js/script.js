@@ -13,10 +13,10 @@ const tablinks = document.getElementsByClassName('tab-links');
 const tabcontents = document.getElementsByClassName('tab-contents');
 
 function opentab(event, tabname) {
-  for (tablink of tablinks) {
+  for (let tablink of tablinks) {
     tablink.classList.remove('active-link');
   }
-  for (tabcontent of tabcontents) {
+  for (let tabcontent of tabcontents) {
     tabcontent.classList.remove('active-tab');
   }
   event.currentTarget.classList.add('active-link');
@@ -30,9 +30,9 @@ let iIndex = 0; // start printing array at this position
 let iArrLength = aText[0].length; // the length of the text array
 const iScrollAt = 20; // start scrolling up at this many lines
 
-let iTextPos = 0; // initialise text position
-let sContents = ''; // initialise contents variable
-let iRow; // initialise current row
+let iTextPos = 0; // initialize text position
+let sContents = ''; // initialize contents variable
+let iRow; // initialize current row
 
 let cursorVisible = false; // Initialize cursor visibility
 
